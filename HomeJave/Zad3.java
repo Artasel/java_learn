@@ -11,10 +11,10 @@ package HomeJave;
 
 public class Zad3 {
     public static void main(String[] args) {
-        int[] arr = new int[0];
-        int[] arr2 = new int[1];
-        int numer = 0;
-        int numer2 = 1;
+        int[] arr = {3, 4,5,2,4,5,6,8,0,4,5,6,5,4,5,6,5,4,5,6,5};
+        int[] arr2 = {1,2,3,4,5,6,9,87,6,5,43,2};
+        int numer = 9;
+        int numer2 = 12;
         merge(arr, numer, arr2, numer2);
 
     }
