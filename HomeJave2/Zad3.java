@@ -24,7 +24,9 @@ public class Zad3 {
 
     public static int[][] floodFill(int[][] image, int sr, int sc, int color) {
         int x = image[sr][sc];
-        trav(sr, sc, x, color, image);
+        if(x != color){
+            trav(sr, sc, x, color, image);
+        }
         return image;
     }
     static void trav(int i, int j, int x, int color, int[][] grid) {
