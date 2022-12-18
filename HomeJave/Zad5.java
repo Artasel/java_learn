@@ -22,7 +22,7 @@ public class Zad5 {
         char one = 'в';
         char two = 'в';
         Boolean prov = true;
-        while (left  <= s.length()) {
+        while (left <= s.length()) {
             while (left < s.length()) {
                 if (Character.isLetterOrDigit(s.charAt(left))) {
                     one = s.charAt(left);
@@ -40,10 +40,12 @@ public class Zad5 {
                 }
                 right -= 1;
             }
-            if (one != two) {  
+
+            if (one != two) {
                 prov = false;
                 break;
             }
+            
             if (left == right - 1) {
                 break;
             }

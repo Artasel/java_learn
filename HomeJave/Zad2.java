@@ -19,6 +19,9 @@ public class Zad2 {
         int[] mass = {0,1,2,2,3,0,4,2};  // {0,1,2,2,3,0,4,2}
         int num = 2;
         System.out.println(removeElement(mass, num));
+        for (int i = 0; i < mass.length; i++) {
+            System.out.print(mass[i] + " ");
+        }
     }
 
     public static int removeElement(int[] nums, int val) {
