@@ -26,7 +26,7 @@ public class Zad2 {
         return false;
         }
 
-        static boolean isSymmetric(Zad2 qwe) {
+    static boolean isSymmetric(Zad2 qwe) {
         return isMirror(root, root);
     }
 

@@ -17,20 +17,20 @@ import java.util.*;
 
 public class Zad {
     public static void main(String[] args) {
-        // Integer[] arr = {12, 21, 3};
-        // List<Integer> l = Arrays.asList(arr); 
-        // ArrayList<Integer> mode = new ArrayList<>(l);
-
-        // Integer[] arr2 = {12, 21, 3, 7}; 
-        // List<Integer> qwe = Arrays.asList(arr2); 
-        // ArrayList<Integer> mode2 = new ArrayList<>(qwe);
-
-        // System.out.println(equality2(mode, mode2, 3));
-
-        Integer[] arr = { 10, 4, 5, 6, 7, 2, 2, 9, 8, 3, 12, 9 };
-        List<Integer> l = Arrays.asList(arr);
+        Integer[] arr = {12, 21, 3};
+        List<Integer> l = Arrays.asList(arr); 
         ArrayList<Integer> mode = new ArrayList<>(l);
-        System.out.println(delEven(mode));
+
+        Integer[] arr2 = {12, 21, 3, 7}; 
+        List<Integer> qwe = Arrays.asList(arr2); 
+        ArrayList<Integer> mode2 = new ArrayList<>(qwe);
+
+        System.out.println(equality2(mode, mode2, 3));
+
+        // Integer[] arr = { 10, 4, 5, 6, 7, 2, 2, 9, 8, 3, 12, 9 };
+        // List<Integer> l = Arrays.asList(arr);
+        // ArrayList<Integer> mode = new ArrayList<>(l);
+        // System.out.println(delEven(mode));
     }
 
     static boolean equality(ArrayList<Integer> list1, ArrayList<Integer> list2) {
@@ -63,11 +63,7 @@ public class Zad {
             counter += 1;
         }
 
-        if (counterNum == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return counterNum == 0;
     }
 
     static ArrayList<Integer> sortEven(ArrayList<Integer> list) {

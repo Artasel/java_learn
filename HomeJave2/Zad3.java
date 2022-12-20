@@ -23,20 +23,20 @@ public class Zad3 {
     }
 
     public static int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        int x = image[sr][sc];
-        if(x != color){
-            trav(sr, sc, x, color, image);
+        int oldColor = image[sr][sc];
+        if(oldColor != color){
+            trav(sr, sc, oldColor, color, image);
         }
         return image;
     }
-    static void trav(int i, int j, int x, int color, int[][] grid) {
+    static void trav(int i, int j, int oldColor, int color, int[][] grid) {
         if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] != x) {
             return;
         }
         grid[i][j] = color;
-        trav(i-1, j,  x, color, grid);
-        trav(i, j-1,  x, color, grid);
-        trav(i+1, j,  x, color, grid);
-        trav(i, j+1,  x, color, grid);
+        trav(i-1, j,  oldColor, color, grid);
+        trav(i, j-1,  oldColor, color, grid);
+        trav(i+1, j,  oldColor, color, grid);
+        trav(i, j+1,  oldColor, color, grid);
     }
 }
