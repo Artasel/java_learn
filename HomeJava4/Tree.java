@@ -3,11 +3,8 @@ package HomeJava4;
 //Учитывая rootдвоичное дерево, проверьте, является ли оно зеркалом самого себя (т. Е. Симметричным вокруг его центра).
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Tree {
-    // static Tree root;
 
     int val;
     Tree left;
@@ -70,18 +67,13 @@ public class Tree {
         tree = new Tree(9);
 
         tree.left = new Tree(-42);
-       // tree.left.left = new Tree();
         tree.left.right = new Tree(76);
         tree.left.right.left = new Tree(76);
 
         tree.right = new Tree(-42);
         tree.right.right = new Tree(13);
         tree.right.right.right = new Tree(13);
-     //   tree.right.left = new Tree(4);
         boolean output = preorderTraversal(tree);
         System.out.println(output);
     }
 }
-
-
-//       [9, -42-,  /-42/, / null,76,  76,null,/   42-,  null,13,  null,13]
