@@ -30,7 +30,7 @@ public class Zad3 {
         return image;
     }
     static void trav(int i, int j, int oldColor, int color, int[][] grid) {
-        if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] != x) {
+        if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] != oldColor) {
             return;
         }
         grid[i][j] = color;
