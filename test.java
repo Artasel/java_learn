@@ -5,14 +5,23 @@ public class test {
   
 
     public static void main(String[] args) {
-        ArrayDeque<Integer> ans = new ArrayDeque<>();
+    //     ArrayDeque<String> ans = new ArrayDeque<>();
 
-       ans.add(1);
-       ans.add(2);
-       ans.add(3);
+    //    ans.add(" 1 ");
+    //    ans.add("2");
+    //    ans.add("3");
    
-       int x = ans.pollLast();
+      // int x = ans.pollLast();
+      //   System.out.println(x);  // replace()  trim()
+    
+    //   String x = ans.pop();
+    //   x.trim();
     //   System.out.println(x);
-       System.out.println(x);
+
+        String x = " sg";
+        String qwe = "";
+        for (int i = 1; i < x.length(); i++) {
+            qwe += x i;
+        }
     }
 }
