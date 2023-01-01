@@ -48,6 +48,11 @@ public class Main {
         Book f = new Book("Нарния", "Не помню");
 
         System.out.println();
+        
+        a.getNameAuthorBook();
+        a.getNameBook();
+
+        System.out.println();
         System.out.println();
 
         Alex.takeBook(a, b, c, d, e, f);

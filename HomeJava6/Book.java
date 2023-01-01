@@ -14,11 +14,13 @@ public class Book {
     }
 
     public void getNameBook() {
-        toString(); 
+        System.out.println();
+        System.out.println(nameBook);; 
     }
 
     public void getNameAuthorBook() {
-        toString(); 
+        System.out.println();
+        System.out.println(nameAuthorBook);; 
     }
 
     static Map<String, String> list = new HashMap<>();
@@ -31,7 +33,7 @@ public class Book {
         }
     }
 
-    @Override
+   @Override
     public String toString() {
         return nameBook;  // "Автор = " + nameAuthorBook + ", " + "Название книги: " + 
     }
