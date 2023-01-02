@@ -31,6 +31,11 @@ public class Main {
         Alex.getReaderTicketNumber();
         Alex.getBirth();
 
+        Reader Bob = new Reader("Smit", "Bob", "Bober");
+        Bob.getName();
+        Bob.getSurName();
+        Bob.getPatronymic();
+
         Alex.takeBook(6);
         System.out.println();
         Alex.takeBook("Приключения Бубоньки", "Словарь русского языка", "Энциклопедия планеты Земля", "Бесконечный ужас");
@@ -66,5 +71,8 @@ public class Main {
         for (Entry<String, String> qwe : Book.list.entrySet()) {
             System.out.println(qwe);
         }
+
+        System.out.println();
+        System.out.println(Reader.listReader);
     }
 }

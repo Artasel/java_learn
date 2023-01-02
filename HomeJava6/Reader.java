@@ -1,5 +1,6 @@
 package HomeJava6;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Reader {
@@ -15,15 +16,18 @@ public class Reader {
 
     private String numTelephone = "89371709380";
 
-    Reader(String surName, String name, String patronymic) {
+    static ArrayList<Reader> listReader = new ArrayList<>();
+
+    public Reader(String surName, String name, String patronymic) {
         this.surName = surName;
         this.name = name;
         this.patronymic = patronymic;
-        questionnaire();
+        Scanner iScanner = new Scanner(System.in);
+        questionnaire(iScanner);
+        listReader.add(this);
     }
 
-    private void questionnaire() {
-        Scanner iScanner = new Scanner(System.in);
+    private void questionnaire(Scanner iScanner) {
         System.out.printf("Номер читательского билета: ");
         this.readerTicketNumber = iScanner.nextLine();
 
@@ -36,7 +40,7 @@ public class Reader {
         System.out.printf("Номер телефона: ");
         this.numTelephone = iScanner.nextLine();
 
-        iScanner.close();
+      //  iScanner.close();
     }
 
     public void getName() {
@@ -130,4 +134,12 @@ public class Reader {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        return "Читатель: имя = " + name + ", фамилия = " + surName + ", отчество = " + patronymic + ", номер читательского билета = "
+                + readerTicketNumber + ", факультет = " + faculty + ", год рождения = " + birth + ", номер телефона = " + numTelephone;
+    }
+
+    
 }
